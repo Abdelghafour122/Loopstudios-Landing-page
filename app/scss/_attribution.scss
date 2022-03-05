@@ -1,0 +1,11 @@
+.attribution {
+  padding: 10px 0;
+  font-size: 18px;
+  text-align: center;
+  background-color: $d-gray;
+  font-weight: bold;
+  & a {
+    color: darkblue;
+    text-decoration: underline dotted;
+  }
+}

@@ -1,0 +1,77 @@
+.leader {
+  margin: 100px 0;
+  @include breakpoint-up(small) {
+    margin: 160px 0;
+  }
+  & .container {
+    position: relative;
+    @include breakpoint-up(small) {
+      flex-direction: row;
+      justify-content: flex-end;
+      height: 500px;
+    }
+    & img {
+      @include breakpoint-up(small) {
+        max-width: 700px;
+        height: 500px;
+        align-self: flex-start;
+        position: absolute;
+        left: calc(0% + 24px);
+        bottom: 0%;
+        @include breakpoint-down(medium) {
+          height: 430px;
+        }
+      }
+    }
+    & .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include breakpoint-up(small) {
+        align-items: flex-start;
+        width: 50%;
+        position: absolute;
+        right: calc(0% + 24px);
+        bottom: 0%;
+        padding: 95px 0 0 105px;
+        background-color: #fff;
+        @include breakpoint-down(medium) {
+          padding: 40px 0 0 40px;
+          width: 85%;
+        }
+      }
+      & h1 {
+        font-family: "Josefin Sans";
+        text-transform: uppercase;
+        font-size: 32px;
+        text-align: center;
+        font-weight: normal;
+        margin-top: 60px;
+        @include breakpoint-up(small) {
+          text-align: unset;
+          margin-top: 0;
+          font-size: 40px;
+          @include breakpoint-down(medium) {
+            font-size: 34px;
+          }
+        }
+      }
+      & p {
+        margin: 0;
+        color: $d-gray;
+        text-align: center;
+        line-height: 1.7;
+        font-size: 17px;
+        max-width: 77%;
+        @include breakpoint-up(small) {
+          max-width: unset;
+          text-align: unset;
+          line-height: 1.5;
+          @include breakpoint-down(medium) {
+            line-height: 1.3;
+          }
+        }
+      }
+    }
+  }
+}

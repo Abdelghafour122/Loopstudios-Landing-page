@@ -1,0 +1,104 @@
+footer {
+  background-color: $black;
+  padding: 65px 0;
+  @include breakpoint-up(small) {
+    padding: 55px 0;
+  }
+  & .container {
+    flex-direction: column;
+    @include breakpoint-up(small) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    & .l-links {
+      & .logo {
+        margin-bottom: 40px;
+        @include breakpoint-up(small) {
+          margin-bottom: 20px;
+        }
+        & img {
+          @include breakpoint-up(small) {
+            width: 158px;
+          }
+        }
+      }
+      & ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @include breakpoint-up(small) {
+          flex-direction: row;
+        }
+        & li {
+          position: relative;
+          &::before {
+            position: absolute;
+            content: "";
+            top: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 3px;
+            width: 0%;
+            border-radius: 30px;
+            background-color: $white;
+            transition: 0.3s;
+          }
+        }
+        & li:hover::before {
+          width: 50%;
+        }
+        & li a {
+          color: $white;
+          font-size: 16px;
+        }
+        & li:not(:last-of-type) {
+          margin-bottom: 30px;
+          @include breakpoint-up(small) {
+            margin-right: 35px;
+            margin-bottom: 0;
+            @include breakpoint-down(medium) {
+              margin-right: 25px;
+            }
+          }
+        }
+      }
+    }
+    & .r-links {
+      text-align: center;
+      margin-top: 60px;
+      @include breakpoint-up(small) {
+        margin-top: 0;
+        text-align: right;
+      }
+      & span {
+        position: relative;
+        cursor: pointer;
+        &::before {
+          position: absolute;
+          content: "";
+          top: 120%;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 3px;
+          width: 0%;
+          border-radius: 30px;
+          background-color: $white;
+          transition: 0.3s;
+        }
+        &:hover::before {
+          width: 100%;
+        }
+      }
+      & span:not(:last-of-type) {
+        margin-right: 15px;
+      }
+      & p {
+        color: $d-gray;
+        @include breakpoint-up(small) {
+          margin: 24px 0 0;
+        }
+      }
+    }
+  }
+}

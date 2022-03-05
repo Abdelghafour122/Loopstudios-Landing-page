@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Alata", "sans serif";
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.heading {
+  font-family: "Josefin Sans";
+  font-weight: normal;
+  color: $white;
+}
+
+button.see {
+  font-family: "Alata";
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 12px 50px;
+  border: 2px solid $black;
+  background-color: $white;
+  color: $black;
+  font-size: 18px;
+  letter-spacing: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+.df {
+  display: flex;
+  &.jc-sb {
+    justify-content: space-between;
+  }
+  &.jc-c {
+    justify-content: center;
+  }
+  &.jc-sa {
+    justify-content: space-around;
+  }
+  &.jc-fs {
+    justify-content: flex-start;
+  }
+  &.jc-fe {
+    justify-content: flex-end;
+  }
+  &.ai-c {
+    align-items: center;
+  }
+  &.fd-c {
+    flex-direction: column;
+  }
+}
+
+.container {
+  // 750px
+  @include breakpoint-down(small) {
+    max-width: 46.875rem;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  @include breakpoint-up(small) {
+    max-width: 46.875rem;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  // 970px
+  @include breakpoint-up(medium) {
+    max-width: 59.375rem;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  // 1120px
+  @include breakpoint-up(large) {
+    max-width: 73.125rem;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+}
+
+.hide-in-desktop {
+  @include breakpoint-up(small) {
+    display: none;
+  }
+}
+
+.hide-in-mobile {
+  @include breakpoint-down(small) {
+    display: none;
+  }
+}
