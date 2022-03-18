@@ -664,6 +664,11 @@ footer .container .l-links .logo {
   }
 }
 
+footer .container .l-links .logo img {
+  height: 32px;
+  width: 192px;
+}
+
 footer .container .l-links ul {
   display: -webkit-box;
   display: -ms-flexbox;
