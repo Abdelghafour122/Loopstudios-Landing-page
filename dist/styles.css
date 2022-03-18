@@ -271,7 +271,8 @@ header nav img#logo {
 
 @media (min-width: 47.9375rem) {
   header nav img#logo {
-    width: unset;
+    width: 192px;
+    height: 32px;
   }
 }
 
