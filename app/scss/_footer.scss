@@ -74,6 +74,10 @@ footer {
       & span {
         position: relative;
         cursor: pointer;
+        & img {
+          height: 24px;
+          width: 24px;
+        }
         &::before {
           position: absolute;
           content: "";

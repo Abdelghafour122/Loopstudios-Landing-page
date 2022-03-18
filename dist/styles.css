@@ -756,6 +756,11 @@ footer .container .r-links span {
   cursor: pointer;
 }
 
+footer .container .r-links span img {
+  height: 24px;
+  width: 24px;
+}
+
 footer .container .r-links span::before {
   position: absolute;
   content: "";
