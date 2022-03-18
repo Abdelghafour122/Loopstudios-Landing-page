@@ -16,11 +16,6 @@ footer {
         @include breakpoint-up(small) {
           margin-bottom: 20px;
         }
-        & img {
-          @include breakpoint-up(small) {
-            width: 158px;
-          }
-        }
       }
       & ul {
         display: flex;

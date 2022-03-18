@@ -664,12 +664,6 @@ footer .container .l-links .logo {
   }
 }
 
-@media (min-width: 47.9375rem) {
-  footer .container .l-links .logo img {
-    width: 158px;
-  }
-}
-
 footer .container .l-links ul {
   display: -webkit-box;
   display: -ms-flexbox;
