@@ -22,6 +22,10 @@
           height: 430px;
         }
       }
+      @include breakpoint-up(medium) {
+        max-width: unset;
+        height: unset;
+      }
     }
     & .text {
       display: flex;

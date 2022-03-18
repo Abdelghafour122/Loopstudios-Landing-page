@@ -31,8 +31,8 @@
       grid-template-rows: repeat(8, minmax(160px, 1fr));
       gap: 24px;
       @include breakpoint-up(small) {
-        grid-template-columns: repeat(4, minmax(200px, 1fr));
-        grid-template-rows: repeat(2, minmax(400px, 1fr));
+        grid-template-columns: repeat(4, 256px);
+        grid-template-rows: repeat(2, 450px);
         @include breakpoint-down(medium) {
           grid-template-columns: repeat(3, minmax(calc(100% / 8), 1fr));
           grid-template-rows: repeat(3, minmax(400px, 1fr));

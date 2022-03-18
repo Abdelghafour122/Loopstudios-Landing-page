@@ -402,6 +402,13 @@ header .wide-h h1 {
   }
 }
 
+@media (min-width: 61.9375rem) {
+  .leader .container img {
+    max-width: unset;
+    height: unset;
+  }
+}
+
 .leader .container .text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -536,10 +543,10 @@ header .wide-h h1 {
 
 @media (min-width: 47.9375rem) {
   .creations .container .create-cont {
-    -ms-grid-columns: (minmax(200px, 1fr))[4];
-        grid-template-columns: repeat(4, minmax(200px, 1fr));
-    -ms-grid-rows: (minmax(400px, 1fr))[2];
-        grid-template-rows: repeat(2, minmax(400px, 1fr));
+    -ms-grid-columns: (256px)[4];
+        grid-template-columns: repeat(4, 256px);
+    -ms-grid-rows: (450px)[2];
+        grid-template-rows: repeat(2, 450px);
   }
 }
 
